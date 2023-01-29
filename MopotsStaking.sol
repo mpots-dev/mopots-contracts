@@ -23,12 +23,12 @@ contract NFTStaking is Ownable, IERC721Receiver {
 
   // reference to the Block NFT contract
   ERC721Enumerable nft;
-  Mopot token;
+  Mopots token;
 
   // maps tokenId to stake
   mapping(uint256 => Stake) public vault; 
 
-   constructor(ERC721Enumerable _nft, Mopot _token) {
+   constructor(ERC721Enumerable _nft, Mopots _token) {
     nft = _nft;
     token = _token;
   }
